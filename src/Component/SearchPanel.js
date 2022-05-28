@@ -36,7 +36,7 @@ const SearchPanel = ({ selectedplace, setSelectedplace, fullScreen, setFullScree
     }
     return (
 
-        <div className={`w-full h-screen pt-6 relative ${bgColor}`}>
+        <div className={`w-full h-screen pt-6 px-4 relative ${bgColor}`}>
             <div className='flex justify-between px-4'>
                 <p className={`text-2xl font-bold`}><span className='text-[#4C5976]'>Bari</span><span className='text-[#8BE2B4]'>koi</span></p>
                 <div className='mr-6'>
@@ -45,7 +45,7 @@ const SearchPanel = ({ selectedplace, setSelectedplace, fullScreen, setFullScree
                         <span class="slider round "></span>
                     </label></div>
             </div>
-            <form onSubmit={handleSubmit(onSubmit)} className='w-full mt-4 px-2  flex items-center shadow-2xl rounded relative md:static z-40 md:z-0 bg-white'>
+            <form onSubmit={handleSubmit(onSubmit)} className='w-full mt-4 px-2  flex items-center shadow-2xl rounded relative md:static z-40 md:z-0 bg-white '>
 
                 <input placeholder="Search location." className={` text-xl py-2 px-4 flex-1`} {...register("location")} />
 
