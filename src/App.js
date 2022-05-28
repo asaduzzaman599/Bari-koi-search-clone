@@ -13,7 +13,7 @@ function App() {
     <div className="md:flex max-h-screen overflow-hidden">
       {fullScreen && <ChevronRightIcon className="h-8 w-8 text-black absolute top-20 left-2  z-30" onClick={() => setFullScreen(false)} />}
 
-      <div className={`${fullScreen ? "w-0" : 'w-full md:w-5/12'}  md:relative absolute`}>
+      <div className={`${fullScreen ? "w-0" : 'w-full md:w-5/12'}  md:relative absolute md:static`}>
         <SearchPanel selectedplace={selectedplace} setSelectedplace={setSelectedplace} fullScreen={fullScreen} setFullScreen={setFullScreen}></SearchPanel>
 
       </div>
