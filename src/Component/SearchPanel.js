@@ -63,7 +63,7 @@ const SearchPanel = ({ selectedplace, setSelectedplace, fullScreen, setFullScree
                         textColor={textColor}></Place>)
                 }
             </div>
-            <div className='h-full relative z-10'>
+            <div className='h-full md:relative hidden md:block z-10 mt-20 ml-5' >
                 {selectedplace && <PlaceDetail place={selectedplace}
                     bgColor={bgColor}
                     textColor={textColor}></PlaceDetail>}
